@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -79,6 +80,12 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
+    <>
+      <Head>
+        <title>SSR-Container</title>
+        <meta name="description" content="Container check" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
@@ -166,5 +173,6 @@ export default function PersistentDrawerLeft() {
         </Typography>
       </Main>
     </Box>
+    </>
   );
 }

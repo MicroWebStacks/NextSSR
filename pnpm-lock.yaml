@@ -5,6 +5,7 @@ specifiers:
   '@emotion/styled': ^11.10.4
   '@mui/icons-material': ^5.10.3
   '@mui/material': ^5.10.4
+  '@splidejs/react-splide': ^0.7.10
   eslint: 8.23.0
   eslint-config-next: 12.3.0
   next: 12.3.0
@@ -16,6 +17,7 @@ dependencies:
   '@emotion/styled': 11.10.4_gyryel6m34lsxtsejhafetjriq
   '@mui/icons-material': 5.10.3_dd6nulnnjx26tfmunhcjosxkxa
   '@mui/material': 5.10.4_6xnkn2aqnlmdvuspwqrjexfduy
+  '@splidejs/react-splide': 0.7.10
   next: 12.3.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -583,6 +585,16 @@ packages:
   /@rushstack/eslint-patch/1.1.4:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: true
+
+  /@splidejs/react-splide/0.7.10:
+    resolution: {integrity: sha512-W83LCjbx0DTKCCCZGV9zTTnl80CDA7LOOg41rOpQ8NXuTBsDVAhqlQ8+bAvvBiclPbAgSi/dMMDkknA19Guq+A==}
+    dependencies:
+      '@splidejs/splide': 4.0.17
+    dev: false
+
+  /@splidejs/splide/4.0.17:
+    resolution: {integrity: sha512-k67vDY0+hl7Qi+I+juOF+DO1KuRw+4RfV5x5SlIVrK60DmMzQvp2j9CqDzixUw3jDDoEaPTGY4BKy5SZSiFf1Q==}
+    dev: false
 
   /@swc/helpers/0.4.11:
     resolution: {integrity: sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==}

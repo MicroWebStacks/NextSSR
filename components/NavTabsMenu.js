@@ -118,26 +118,18 @@ export default function NavTabsMenu({children}) {
         </DrawerHeader>
         <Divider />
         <List>
-            <Link href="/">
+          {["/","/text","/slides"].map((link,index)=>(
+            <Link href={link} key={index}>
                 <ListItem disablePadding >
                     <ListItemButton>
                     <ListItemIcon>
                         <InboxIcon />
                     </ListItemIcon>
-                    <ListItemText primary={"index"} />
+                    <ListItemText primary={link} />
                     </ListItemButton>
                 </ListItem>
             </Link>
-            <Link href="/drawer">
-                <ListItem disablePadding>
-                    <ListItemButton>
-                    <ListItemIcon>
-                        <MailIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="drawer" />
-                    </ListItemButton>
-                </ListItem>
-            </Link>
+          ))}
         </List>
       </Drawer>
       <Main open={open}>
